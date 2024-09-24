@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
             continue;
          }
        }
-
+      // should i make seperate error handling files
       Statement statement;    // ofc specific error like unknown command must be considered.
       switch(prepare_statement(input_buffer, &statement)) {
         case PREPARE_SUCCESS:
@@ -51,10 +51,3 @@ int main(int argc, char* argv[]) {
   }
 }
 
-
-
-
-
-
-
-}
